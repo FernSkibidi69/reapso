@@ -1,0 +1,24 @@
+<h2>
+  {{ country()?.name }}
+</h2>
+
+<p>
+  Region: {{ country()?.region }}
+</p>
+
+<p>
+  Capital: {{ country()?.capital }}
+</p>
+
+<p>
+  Population: {{ country()?.population }}
+</p>
+
+<p>
+  Abbreviation: {{ country()?.abbreviation }}
+</p>
+
+<img
+  [src]="country()?.flag"
+  [alt]="country()?.name"
+/>
